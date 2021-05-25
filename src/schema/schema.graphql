@@ -1,0 +1,6 @@
+type Query {
+    hola: String!
+    saludos: String!
+    holaConNombre(nombre: String!): String!
+    holaAlCursoGraphQL: String!
+}
