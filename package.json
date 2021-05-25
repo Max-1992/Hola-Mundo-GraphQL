@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev":"npm run build:dev" ,
+    "start:dev": "npm run build:dev",
     "watch": "tsc -w",
     "build:dev": "nodemon \"src/index.ts\" --exec \"ts-node\" src/index.ts -e ts,graphql",
     "build": "tsc -p . && ncp src/schema build/schema",
@@ -14,10 +14,10 @@
   "author": "maximiliano <maximiliano.echevarria>",
   "license": "MIT",
   "dependencies": {
+    "apollo-server-express": "^2.24.1",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "express-graphql": "^0.12.0",
     "graphql": "^15.5.0",
     "graphql-import-node": "0.0.4",
     "graphql-playground-middleware-express": "^1.7.22",
